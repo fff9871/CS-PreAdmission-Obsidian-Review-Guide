@@ -1,0 +1,17 @@
+{
+  "commitMessage": "vault backup: {{date}}",
+  "autoCommitMessage": "vault backup: {{date}}",
+  "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
+  "autoSaveInterval": 10,
+  "autoPushInterval": 0,
+  "autoPullInterval": 10,
+  "autoPullOnBoot": true,
+  "autoCommitOnlyStaged": false,
+  "disablePush": false,
+  "pullBeforePush": true,
+  "differentIntervalCommitAndPush": false,
+  "showStatusBar": true,
+  "showBranchStatusBar": true,
+  "basePath": "",
+  "gitDir": ""
+}
