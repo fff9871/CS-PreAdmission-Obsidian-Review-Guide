@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">CS 预推免专业课 Obsidian 复习导航</title>
+  <desc id="desc">由书页、知识节点和导航指针组成的学习导航标志</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1736"/>
+      <stop offset="0.55" stop-color="#112B57"/>
+      <stop offset="1" stop-color="#0A4363"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#55D6BE"/>
+      <stop offset="1" stop-color="#55A7FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020817" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="320" rx="40" fill="url(#background)"/>
+  <circle cx="1090" cy="48" r="150" fill="#2D70A9" opacity="0.10"/>
+  <circle cx="1030" cy="326" r="210" fill="#24BFA5" opacity="0.08"/>
+  <path d="M330 52H1128" stroke="#86E5D2" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M330 268H1030" stroke="#7CB8FF" stroke-opacity="0.10" stroke-width="2"/>
+
+  <g transform="translate(56 40)" filter="url(#shadow)">
+    <rect width="240" height="240" rx="52" fill="#F7FBFF"/>
+    <rect x="16" y="16" width="208" height="208" rx="40" fill="url(#mark)" opacity="0.12"/>
+
+    <path d="M50 82C75 72 96 74 120 91V178C96 162 75 159 50 169V82Z" fill="#0F2B52"/>
+    <path d="M190 82C165 72 144 74 120 91V178C144 162 165 159 190 169V82Z" fill="#143B6A"/>
+    <path d="M120 91V178" stroke="#63D9C3" stroke-width="5" stroke-linecap="round"/>
+    <path d="M67 105C84 100 98 103 108 110M67 127C84 122 98 125 108 132M67 149C84 144 98 147 108 154" fill="none" stroke="#8EB9E8" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M147 111L173 101L163 127L151 115L147 111Z" fill="#FFB84D"/>
+    <circle cx="163" cy="101" r="7" fill="#FFB84D"/>
+    <circle cx="174" cy="146" r="7" fill="#55D6BE"/>
+    <circle cx="145" cy="151" r="7" fill="#55A7FF"/>
+    <path d="M163 108L173 139M157 116L147 144M152 151H167" fill="none" stroke="#517CA8" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="42" y="39" width="64" height="34" rx="17" fill="#0F2B52"/>
+    <text x="74" y="62" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="1">CS</text>
+  </g>
+
+  <g transform="translate(350 78)">
+    <text x="0" y="58" fill="#FFFFFF" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="54" font-weight="750" letter-spacing="1">CS 预推免专业课</text>
+    <text x="2" y="120" fill="#8FE5D4" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="36" font-weight="650" letter-spacing="4">OBSIDIAN 复习导航</text>
+    <g transform="translate(2 148)">
+      <rect width="136" height="32" rx="16" fill="#55D6BE" opacity="0.16"/>
+      <text x="68" y="22" text-anchor="middle" fill="#A4F2E3" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="600">知识地图</text>
+      <rect x="150" width="136" height="32" rx="16" fill="#55A7FF" opacity="0.16"/>
+      <text x="218" y="22" text-anchor="middle" fill="#A9D2FF" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="600">高频速查</text>
+      <rect x="300" width="136" height="32" rx="16" fill="#FFB84D" opacity="0.16"/>
+      <text x="368" y="22" text-anchor="middle" fill="#FFD597" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" font-weight="600">主动回忆</text>
+    </g>
+  </g>
+</svg>
