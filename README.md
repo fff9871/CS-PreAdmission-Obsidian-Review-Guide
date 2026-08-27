@@ -17,6 +17,12 @@
 
 当前知识库覆盖 **9 个学科方向、55 个主题目录、36 个导航页和 380+ 篇 Markdown 笔记**。
 
+### 知识库生成方式
+
+本仓库由维护者使用 **`tutor-setup` Skill** 的 Document Mode，根据 PDF 学习资料生成并持续完善。该流程会先核对每份 PDF 的实际主题与页码，再建立完整知识清单，并统一生成 Dashboard、概念笔记、练习题、标签、来源映射和双向链接，使每个知识点都能追溯到对应资料。
+
+仓库中的 `source_pdf`、`part`、学习地图、速查页、高频易错点和练习文件，均遵循 `tutor-setup` 的 StudyVault 组织规范。
+
 ## 内容范围
 
 | 学科 | 主题目录 | 推荐入口 |
@@ -115,6 +121,27 @@
 
 欢迎通过 Issue 和 Pull Request 补充知识点、修正表述、完善来源或新增练习。
 
+### 使用 `tutor-setup` 从 PDF 贡献
+
+新增学科、章节或成体系扩展知识点时，请使用 **`tutor-setup` Skill** 的 Document Mode，根据 PDF 生成内容，以保持来源追踪、笔记深度和仓库结构一致。
+
+1. 将有权使用的 PDF 放入当前工作目录或其子目录。
+2. 在支持 Codex Skills 的环境中调用：
+
+   ```text
+   $tutor-setup <PDF 路径>
+   ```
+
+3. 确认使用 Document Mode，并核对 Skill 扫描得到的资料列表、实际主题和页码范围。
+4. 按完整主题清单生成或更新以下内容：
+   - 学习地图、速查页、高频易错点和来源映射；
+   - 带 `source_pdf`、`part`、`keywords` 的概念笔记；
+   - 每个主题目录的主动回忆练习；
+   - 概念、练习与 Dashboard 之间的双向链接。
+5. 完成 `tutor-setup` 自检，并人工复核事实、公式、术语、链接和资料页码。
+
+PDF 仅作为知识整理来源。提交时请保留可追溯的资料名称和页码，并遵守资料版权与授权范围。
+
 ### 标准流程
 
 1. Fork 本仓库并克隆自己的副本。
@@ -124,8 +151,8 @@
    git checkout -b docs/add-topic-name
    ```
 
-3. 按现有目录和笔记格式完成修改。
-4. 检查 Wiki Link、Markdown 表格、标题层级和来源信息。
+3. 使用 `tutor-setup` 根据 PDF 生成或更新 StudyVault 内容。
+4. 检查 Wiki Link、Markdown 表格、标题层级、练习覆盖和来源信息。
 5. 提交并推送分支：
 
    ```bash
@@ -148,6 +175,8 @@
 
 ### Pull Request 检查清单
 
+- [ ] 新增或成体系扩展的内容已使用 `tutor-setup` Document Mode 根据 PDF 生成；
+- [ ] Pull Request 已说明 PDF 资料名称、实际主题和页码范围；
 - [ ] 文件位于正确的编号目录，名称清晰且唯一；
 - [ ] YAML、标签和标题格式与相邻笔记一致；
 - [ ] 新增 Wiki Link 在 Obsidian 中可以正确解析；
@@ -196,4 +225,3 @@ git push origin main
 - GitHub：<https://github.com/fff9871/CS-PreAdmission-Obsidian-Review-Guide>
 - 默认分支：`main`
 - 笔记格式：Markdown / Obsidian Wiki Link
-
